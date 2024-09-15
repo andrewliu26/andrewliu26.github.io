@@ -1,3 +1,4 @@
+// @ts-ignore
 import { ImageResponse } from 'next/og'
 
 export function GET(request: Request) {
