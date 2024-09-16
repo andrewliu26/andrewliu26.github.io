@@ -55,7 +55,7 @@ export function BlogPosts() {
                             href="https://www.figma.com/@andrewliu26"
                         >
                             <ArrowIcon />
-                            <p className="ml-2 h-7">github link</p>
+                            <p className="ml-2 h-7">Github Link</p>
                         </a>
                     </li>
                 </div>
