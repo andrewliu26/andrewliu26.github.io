@@ -1,11 +1,10 @@
-// next.config.js
-const isProd = process.env.NODE_ENV === 'production';
-
-module.exports = {
-	assetPrefix: isProd ? '/andrewliu26.github.io/' : '',
-	basePath: isProd ? '/andrewliu26.github.io' : '',
-	trailingSlash: true, // Ensures every route ends with a trailing slash (e.g., /about/)
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+	output: 'export', // This enables static export for the App Router
 	images: {
-		unoptimized: true, // Disables Next.js optimized image handling, since it doesn't work with static exports
+		unoptimized: true, // Necessary for static exports, disables Next.js image optimization
 	},
-};
+	trailingSlash: true, // Adds a trailing slash to the routes
+}
+
+module.exports = nextConfig
